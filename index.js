@@ -10,6 +10,7 @@ server.get('/', (req, res) => {
 
 //middleware
 server.use(express.json());
+server.use(cors());
 
 //create a user
 server.post('/api/users', (req, res) => {
